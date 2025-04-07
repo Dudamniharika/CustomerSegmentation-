@@ -95,8 +95,8 @@ if st.button("Predict Segment", type="primary"):
                 
                 # Simple visualization
                 fig, ax = plt.subplots()
-                ax.barh(['Income', 'Total Spending', 'Web Purchases'], 
-                       [income, Total_Spending, NumWebPurchases], 
+                ax.barh(['Income', 'Total Spending'], 
+                       [income, Total_Spending], 
                        color='skyblue')
                 ax.set_title('Key Customer Metrics')
                 st.pyplot(fig)
