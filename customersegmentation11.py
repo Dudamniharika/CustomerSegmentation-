@@ -9,7 +9,7 @@ import pandas as pd
 # Load the trained model
 def load_model():
     try:
-        model = joblib.load(r"C:\Users\vinod\OneDrive\Desktop\deployment\kmeans_model.pkl")
+        model = joblib.load("kmeans_model.pkl")
         return model
     except Exception as e:
         st.error(f"Error loading model: {e}")
