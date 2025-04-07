@@ -45,7 +45,7 @@ with col1:
     income = st.number_input('Income (USD)', min_value=0, value=50000)
     Education = st.selectbox('Education Level',[1, 2, 3, 4, 5],help="1: Basic, 2: High School, 3: Bachelor, 4: Master, 5: PhD")
     Total_children = st.number_input('Number of Children', min_value=0, max_value=10, value=0)
-    
+    Marital_Status_Together = st.selectbox('Marital Status', [0, 1], help="0: Single, 1: Together")
 with col2:
     st.subheader("Behavioral Information")
     Recency = st.number_input('Days Since Last Purchase', min_value=0, value=30)
@@ -61,7 +61,7 @@ with col3:
 with col4:
     Complain = st.selectbox('Has Complained?', [0, 1], help="0: No, 1: Yes")
     Response = st.selectbox('Responded to Last Campaign?', [0, 1], help="0: No, 1: Yes")
-    Marital_Status_Together = st.selectbox('Marital Status', [0, 1], help="0: Single, 1: Together")
+    
 
 # Prediction button with enhanced logic
 if st.button("Predict Segment", type="primary"):
