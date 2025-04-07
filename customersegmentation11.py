@@ -94,9 +94,9 @@ if st.button("Predict Segment", type="primary"):
                     st.info(f"**Segment Characteristics:** {segment_descriptions[cluster[0]]}")
                 
                 # Simple visualization
-                fig, ax = plt.subplots()
-                ax.barh(['Income', 'Total Spending'], 
-                       [income, Total_Spending], 
+               fig, ax = plt.subplots()
+                ax.bar(['Income', 'Total Spending','Recency','Age'], 
+                       [income, Total_Spending,Recency,Age], 
                        color='skyblue')
                 ax.set_title('Key Customer Metrics')
                 st.pyplot(fig)
